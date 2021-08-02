@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { login } from '../util/firebaseFunctions'
 
 function Login() {
     const [ email, setEmail ] = useState('');
@@ -10,6 +11,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+            await login(email, password)
             // sign in with firebase then change route
             history.push('/')
         } catch (error) {

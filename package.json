@@ -1,0 +1,21 @@
+{
+  "name": "handmedown-huey-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd backend && npm install && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hupaulcamacho/handmedown-huey-build.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hupaulcamacho/handmedown-huey-build/issues"
+  },
+  "homepage": "https://github.com/hupaulcamacho/handmedown-huey-build#readme"
+}
