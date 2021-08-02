@@ -19,7 +19,7 @@ function  SignUp() {
             console.log(password)
             let res = await signUp(email, password)
             console.log(res)
-            await axios.post('http://localhost:3001/api/users', { id: res.user.uid, email})
+            await axios.post(`${API}/api/users`, { id: res.user.uid, email})
             // sign up with firebase and send result to backend
             history.push('/')
         } catch (error) {
